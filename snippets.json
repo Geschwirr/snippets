@@ -1,0 +1,55 @@
+{
+	"snippets": {
+		"html": {
+			"snippets": {
+				//PHP
+				"for": "<?php for (\\$x = 0; \\$x <= 1; \\$x++) { ?>\n|\n <?php } ?>",
+
+				// Media
+				"fakeimg": "<img src=\"https://api.fnkr.net/testimg/400x400/F0F0F0/FFF/?text=image\">",
+
+				// Image Blocks
+				"imgh1p": "<img src=\"https://api.fnkr.net/testimg/400x400/F0F0F0/FFF/?text=image\">\n<h1>|</h1>\n<p>Lorem</p>",
+				"imgh2p": "<img src=\"https://api.fnkr.net/testimg/400x400/F0F0F0/FFF/?text=image\">\n<h2>|</h2>\n<p>Lorem</p>",
+				"imgh3p": "<img src=\"https://api.fnkr.net/testimg/400x400/F0F0F0/FFF/?text=image\">\n<h3>|</h3>\n<p>Lorem</p>",
+				"imgh4p": "<img src=\"https://api.fnkr.net/testimg/400x400/F0F0F0/FFF/?text=image\">\n<h4>|</h4>\n<p>Lorem</p>",
+				"imgh5p": "<img src=\"https://api.fnkr.net/testimg/400x400/F0F0F0/FFF/?text=image\">\n<h5>|</h5>\n<p>Lorem</p>",
+
+				// Row Layout
+				"r111": "<div class=\"row\">\n<div class=\"small-1 columns\">|</div>\n<div class=\"small-11 columns\"></div>\n</div>",
+				"r210": "<div class=\"row\">\n<div class=\"small-2 columns\">|</div>\n<div class=\"small-10 columns\"></div>\n</div>",
+				"r39": "<div class=\"row\">\n<div class=\"small-3 columns\">|</div>\n<div class=\"small-9 columns\"></div>\n</div>",
+				"r48": "<div class=\"row\">\n<div class=\"small-4 columns\">|</div>\n<div class=\"small-8 columns\"></div>\n</div>",
+				"r57": "<div class=\"row\">\n<div class=\"small-5 columns\">|</div>\n<div class=\"small-7 columns\"></div>\n</div>",
+				"r66": "<div class=\"row\">\n<div class=\"small-6 columns\">|</div>\n<div class=\"small-6 columns\"></div>\n</div>",
+				"r75": "<div class=\"row\">\n<div class=\"small-7 columns\">|</div>\n<div class=\"small-5 columns\"></div>\n</div>",
+				"r84": "<div class=\"row\">\n<div class=\"small-8 columns\">|</div>\n<div class=\"small-4 columns\"></div>\n</div>",
+				"r93": "<div class=\"row\">\n<div class=\"small-9 columns\">|</div>\n<div class=\"small-3 columns\"></div>\n</div>",
+				"r102": "<div class=\"row\">\n<div class=\"small-10 columns\">|</div>\n<div class=\"small-2 columns\"></div>\n</div>",
+
+				// Layout
+				"111": "<div class=\"small-1 columns\">|</div>\n<div class=\"small-11 columns\"></div>",
+				"210": "<div class=\"small-2 columns\">|</div>\n<div class=\"small-10 columns\"></div>",
+				"39": "<div class=\"small-3 columns\">|</div>\n<div class=\"small-9 columns\"></div>",
+				"48": "<div class=\"small-4 columns\">|</div>\n<div class=\"small-8 columns\"></div>",
+				"57": "<div class=\"small-5 columns\">|</div>\n<div class=\"small-7 columns\"></div>",
+				"66": "<div class=\"small-6 columns\">|</div>\n<div class=\"small-6 columns\"></div>",
+				"75": "<div class=\"small-7 columns\">|</div>\n<div class=\"small-5 columns\"></div>",
+				"84": "<div class=\"small-8 columns\">|</div>\n<div class=\"small-4 columns\"></div>",
+				"93": "<div class=\"small-9 columns\">|</div>\n<div class=\"small-3 columns\"></div>",
+				"102": "<div class=\"small-10 columns\">|</div>\n<div class=\"small-2 columns\"></div>",
+
+
+				// Small-up Layouts
+				"rup2for": "<div class=\"row\">\n<div class=\"small-up-2\">\n<?php for (\\$x = 0; \\$x <= 2; \\$x++) { ?>\n<div class=\"column column-block\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
+				"rup3for": "<div class=\"row\">\n<div class=\"small-up-3\">\n<?php for (\\$x = 0; \\$x <= 3; \\$x++) { ?>\n<div class=\"column column-block\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
+				"rup4for": "<div class=\"row\">\n<div class=\"small-up-4\">\n<?php for (\\$x = 0; \\$x <= 4; \\$x++) { ?>\n<div class=\"column column-block\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
+				"rup5for": "<div class=\"row\">\n<div class=\"small-up-5\">\n<?php for (\\$x = 0; \\$x <= 5; \\$x++) { ?>\n<div class=\"column column-block\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
+				"rup2": "<div class=\"row\">\n<div class=\"small-up-2\">\n<div class=\"column column-block\">\n|\n</div>\n</div>\n</div>",
+				"rup3": "<div class=\"row\">\n<div class=\"small-up-3\">\n<div class=\"column column-block\">\n|\n</div>\n</div>\n</div>",
+				"rup4": "<div class=\"row\">\n<div class=\"small-up-4\">\n<div class=\"column column-block\">\n|\n</div>\n</div>\n</div>",
+				"rup5": "<div class=\"row\">\n<div class=\"small-up-5\">\n<div class=\"column column-block\">\n|\n</div>\n</div>\n</div>",
+			}
+		}
+	}
+}
