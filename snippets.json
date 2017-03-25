@@ -3,8 +3,12 @@
 		"html": {
 			"snippets": {
 
+				// Template
+				"template": "<?php \\$page_name = \"index\" ?>\n<?php \\$notes = array('Notes in here'); ?>\n<?php include(\"includes/header.php\"); ?>\n<?php include(\"includes/nav.php\"); ?>\n\n|\n\n<?php include(\"includes/footer.php\"); ?>",
+
 				// Media
 				"fakeimg": "<img src=\"https://api.fnkr.net/testimg/400x400/F0F0F0/FFF/?text=image\">",
+				"fakeimground": "<img src=\"https://api.fnkr.net/testimg/400x400/F0F0F0/FFF/?text=image\" style=\"border-radius:100%;\">",
 
 				// Image Blocks
 				"imgh1p": "<img src=\"https://api.fnkr.net/testimg/400x400/F0F0F0/FFF/?text=image\">\n<h1>|</h1>\n<p>Lorem</p>",
@@ -15,10 +19,10 @@
 
 				// Small-up Layouts
 
-				"rup2for": "<div class=\"row\">\n<div class=\"small-up-2\">\n<?php for (\\$x = 0; \\$x <= 2; \\$x++) { ?>\n<div class=\"column column-block\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
-				"rup3for": "<div class=\"row\">\n<div class=\"small-up-3\">\n<?php for (\\$x = 0; \\$x <= 3; \\$x++) { ?>\n<div class=\"column column-block\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
-				"rup4for": "<div class=\"row\">\n<div class=\"small-up-4\">\n<?php for (\\$x = 0; \\$x <= 4; \\$x++) { ?>\n<div class=\"column column-block\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
-				"rup5for": "<div class=\"row\">\n<div class=\"small-up-5\">\n<?php for (\\$x = 0; \\$x <= 5; \\$x++) { ?>\n<div class=\"column column-block\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
+				"rsu2for": "<div class=\"row\">\n<div class=\"small-up-2\">\n<?php for (\\$x = 0; \\$x <= 2; \\$x++) { ?>\n<div class=\"column blockMargin--small\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
+				"rsu3for": "<div class=\"row\">\n<div class=\"small-up-3\">\n<?php for (\\$x = 0; \\$x <= 3; \\$x++) { ?>\n<div class=\"column blockMargin--small\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
+				"rsu4for": "<div class=\"row\">\n<div class=\"small-up-4\">\n<?php for (\\$x = 0; \\$x <= 4; \\$x++) { ?>\n<div class=\"column blockMargin--small\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
+				"rsu5for": "<div class=\"row\">\n<div class=\"small-up-5\">\n<?php for (\\$x = 0; \\$x <= 5; \\$x++) { ?>\n<div class=\"column blockMargin--small\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
 
 				//PHP
 				"for": "<?php for (\\$x = 0; \\$x <= 1; \\$x++) { ?>\n|\n <?php } ?>",
@@ -26,7 +30,14 @@
 				// PHP BLOCKS 
 				"loops": "<?php include('loops/|.php'); ?>",
 				"blocks": "<?php include('blocks/|.php'); ?>",
+				"include": "<?php include('includes/|.php'); ?>",
 				"pagination": "<?php include('blocks/pagination.php'); ?>",
+
+				// Forms & Inputs
+				"linput": "<label>|\n<input type='text'>\n</label>",
+
+				// Foundation Blocks
+				"switch": "<div class=\"switch\">\n<input class=\"switch-input\" id=\"exampleSwitch\" type=\"checkbox\" >\n<label class=\"switch-paddle\" for=\"exampleSwitch\"></label>\n</div>"
 			},
 			"abbreviations": {
 
@@ -34,23 +45,30 @@
 				"accordion": "ul.accordion[data-accordion=data-accordion]>(accordion-active)>(li.accordion-item*2>(a.accordion-title[href=#panel$@2]{Accordion $@2})>(div#panel$@2.accordion-content[data-tab-content=data-tab-content]))",
 				"accordion-active": "li.accordion-item.is-active>(a.accordion-title[href=#panel$]{Accordion $})>div#panel$.accordion-content.active[data-tab-content=data-tab-content]",
 				"breadcrumbs" : "ul.breadcrumbs>(li>a[href=#]>i.fi-home)>(li>a[href=#])>(li.current>a[href=#])",
-				"tabs-nav": "ul.tabs[data-tabs=data-tabs]>(tab-active)>li.tabs-title*2>a[href=#panel$]",
-				"tab-active": "li.tabs-title.is-active>a[href=#panel0]",
-				"tabs-body": ".tabs-content>.tabs-panel.is-active#panel0+.tabs-panel#panel$*2",
+				"tabs-nav": "ul.tabs#content-tabs[data-tabs=data-tabs]>(tab-active)>li.tabs-title*2>a.js-noScroll[href=#panel$]",
+				"tab-active": "li.tabs-title.is-active>a.js-noScroll[href=#panel0]",
+				"tabs-body": ".tabs-content[data-tabs-content=content-tabs]>.tabs-panel.is-active#panel0+.tabs-panel#panel$*2",
 				"tabs": "tabs-nav+tabs-body",
-
+				"datepicker" : "input#datepicker",
+				"orbit-nav": "nav.orbit-bullets>button.is-active[data-slide='0']+button[data-slide='1']+button[data-slide='2']",
+				"orbit": ".orbit[data-orbit=data-orbit]>ul.orbit-container>button.orbit-previous{&#9664;&#xFE0E;}+button.orbit-next{&#9654;&#xFE0E;}+li.is-active.orbit-slide>(fakeimg)+figcaption.orbit-caption{Space,the final frontier}^li.orbit-slide>(fakeimg)+figcaption.orbit-caption{Lets Rocket!}^li.orbit-slide>(fakeimg)+figcaption.orbit-caption{Encapsulating}^^(orbit-nav)",
+				"search": ".row.small-12.column>.input-group>input.input-group-field[type='text']+.input-group-button>input.button[type='Submit'][value='Search']",
+				
 				// Forms & Inputs
-				"selopt2" : "selection>option*2",
-				"selopt3" : "selection>option*3",
-				"selopt4" : "selection>option*4",
-				"selopt5" : "selection>option*5",
+				"so2" : "select>option*2",
+				"so3" : "select>option*3",
+				"so4" : "select>option*4",
+				"so5" : "select>option*5",
+				"check": "input[type='checkbox']",
+				"radio": "input[type='radio']",
 
-				// Layout Centered
+				// Layout Align
+				"r12r": ".row>.small-12.column.text-right",
 				"r12c": ".row>.small-12.column.text-center",
-				"r11c": ".row>.small-10.column.small-centered",
+				"r11c": ".row>.small-11.column.small-centered",
 				"r10c": ".row>.small-10.column.small-centered",
-				"r9c": ".row>.small-10.column.small-centered",
-				"r8c": ".row>.small-10.column.small-centered",
+				"r9c": ".row>.small-9.column.small-centered",
+				"r8c": ".row>.small-8.column.small-centered",
 
 
 				// Row Layout
@@ -64,6 +82,8 @@
 				"r84": ".row>.small-8.columns+.small-4.columns",
 				"r93": ".row>.small-9.columns+.small-3.columns",
 				"r102": ".row>.small-10.columns+.small-2.columns",
+				"r444": ".row>.small-4.columns*3",
+				"r3333": ".row>.small-3.columns*4",
 
 				// Layout
 				"111": ".small-11.columns+.small-1.columns",
@@ -78,10 +98,10 @@
 				"102": ".small-10.columns+.small-2.columns",
 
 				// Small-up
-				"rup2": ".row>.small-up-2>.column.column-block",
-				"rup3": ".row>.small-up-3>.column.column-block",
-				"rup4": ".row>.small-up-4>.column.column-block",
-				"rup5": ".row>.small-up-5>.column.column-block",
+				"rsu2": ".row>.small-up-2>.column.blockMargin--small",
+				"rsu3": ".row>.small-up-3>.column.blockMargin--small",
+				"rsu4": ".row>.small-up-4>.column.blockMargin--small",
+				"rsu5": ".row>.small-up-5>.column.blockMargin--small",
 			}
 		}
 	}
