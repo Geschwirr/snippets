@@ -1,5 +1,15 @@
 {
 	"snippets": {
+		"css": {
+			"snippets": {
+				// Media Queries
+
+				"query": "@include breakpoint(|) {\n|\n}",
+				"querys": "@include breakpoint(small only) {\n|\n}",
+				"querym": "@include breakpoint(medium only) {\n|\n}",
+				"queryl": "@include breakpoint(large up) {\n|\n}"
+			}
+		},
 		"html": {
 			"snippets": {
 
@@ -7,8 +17,9 @@
 				"template": "<?php \\$page_name = \"index\" ?>\n<?php \\$notes = array('Notes in here'); ?>\n<?php include(\"includes/header.php\"); ?>\n<?php include(\"includes/nav.php\"); ?>\n\n|\n\n<?php include(\"includes/footer.php\"); ?>",
 
 				// Media
+				"img": "<img data-src=\"holder.js/400x400?auto=yes&text=\">",
 				"fakeimg": "<img src=\"https://api.fnkr.net/testimg/400x400/F0F0F0/FFF/?text=image\">",
-				"fakeimground": "<img src=\"https://api.fnkr.net/testimg/400x400/F0F0F0/FFF/?text=image\" style=\"border-radius:100%;\">",
+				"imground": "<img data-src=\"holder.js/400x400?auto=yes&text=\" style=\"border-radius:100%;\">",
 
 				// Image Blocks
 				"imgh1p": "<img src=\"https://api.fnkr.net/testimg/400x400/F0F0F0/FFF/?text=image\">\n<h1>|</h1>\n<p>Lorem</p>",
@@ -19,10 +30,10 @@
 
 				// Small-up Layouts
 
-				"rsu2for": "<div class=\"row\">\n<div class=\"small-up-2\">\n<?php for (\\$x = 0; \\$x <= 2; \\$x++) { ?>\n<div class=\"column blockMargin--small\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
-				"rsu3for": "<div class=\"row\">\n<div class=\"small-up-3\">\n<?php for (\\$x = 0; \\$x <= 3; \\$x++) { ?>\n<div class=\"column blockMargin--small\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
-				"rsu4for": "<div class=\"row\">\n<div class=\"small-up-4\">\n<?php for (\\$x = 0; \\$x <= 4; \\$x++) { ?>\n<div class=\"column blockMargin--small\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
-				"rsu5for": "<div class=\"row\">\n<div class=\"small-up-5\">\n<?php for (\\$x = 0; \\$x <= 5; \\$x++) { ?>\n<div class=\"column blockMargin--small\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
+				"rsu2for": "<div class=\"row\">\n<div class=\"small-up-2\">\n<?php for (\\$x = 0; \\$x <= 1; \\$x++) { ?>\n<div class=\"column blockMargin--small\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
+				"rsu3for": "<div class=\"row\">\n<div class=\"small-up-3\">\n<?php for (\\$x = 0; \\$x <= 2; \\$x++) { ?>\n<div class=\"column blockMargin--small\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
+				"rsu4for": "<div class=\"row\">\n<div class=\"small-up-4\">\n<?php for (\\$x = 0; \\$x <= 3; \\$x++) { ?>\n<div class=\"column blockMargin--small\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
+				"rsu5for": "<div class=\"row\">\n<div class=\"small-up-5\">\n<?php for (\\$x = 0; \\$x <= 4; \\$x++) { ?>\n<div class=\"column blockMargin--small\">\n|\n</div>\n<?php } ?>\n</div>\n</div>",
 
 				//PHP
 				"for": "<?php for (\\$x = 0; \\$x <= 1; \\$x++) { ?>\n|\n <?php } ?>",
@@ -36,14 +47,17 @@
 				// Forms & Inputs
 				"linput": "<label>|\n<input type='text'>\n</label>",
 
+				"sticky": "data-sticky-container \n class=\"sticky\" data-sticky data-anchor=\"foo\"",
+
 				// Foundation Blocks
-				"switch": "<div class=\"switch\">\n<input class=\"switch-input\" id=\"exampleSwitch\" type=\"checkbox\" >\n<label class=\"switch-paddle\" for=\"exampleSwitch\"></label>\n</div>"
+				"switch": "<div class=\"switch\">\n<input class=\"switch-input\" id=\"exampleSwitch\" type=\"checkbox\" >\n<label class=\"switch-paddle\" for=\"exampleSwitch\"></label>\n</div>",
+				"tooltip": "data-tooltip title=\"|\""
 			},
 			"abbreviations": {
 
 				// Foundation Blocks 
-				"accordion": "ul.accordion[data-accordion=data-accordion]>(accordion-active)>(li.accordion-item*2>(a.accordion-title[href=#panel$@2]{Accordion $@2})>(div#panel$@2.accordion-content[data-tab-content=data-tab-content]))",
-				"accordion-active": "li.accordion-item.is-active>(a.accordion-title[href=#panel$]{Accordion $})>div#panel$.accordion-content.active[data-tab-content=data-tab-content]",
+				"accordion": "ul.accordion[data-accordion=data-accordion]>(accordion-active)>(li.accordion-item*2>(a.accordion-title.js-noScroll[href=#panel$@2]{Accordion $@2})>(div#panel$@2.accordion-content[data-tab-content=data-tab-content]))",
+				"accordion-active": "li.accordion-item.is-active>(a.accordion-title.js-noScroll[href=#panel$]{Accordion $})>div#panel$.accordion-content.active[data-tab-content=data-tab-content]",
 				"breadcrumbs" : "ul.breadcrumbs>(li>a[href=#]>i.fi-home)>(li>a[href=#])>(li.current>a[href=#])",
 				"tabs-nav": "ul.tabs#content-tabs[data-tabs=data-tabs]>(tab-active)>li.tabs-title*2>a.js-noScroll[href=#panel$]",
 				"tab-active": "li.tabs-title.is-active>a.js-noScroll[href=#panel0]",
@@ -53,6 +67,7 @@
 				"orbit-nav": "nav.orbit-bullets>button.is-active[data-slide='0']+button[data-slide='1']+button[data-slide='2']",
 				"orbit": ".orbit[data-orbit=data-orbit]>ul.orbit-container>button.orbit-previous{&#9664;&#xFE0E;}+button.orbit-next{&#9654;&#xFE0E;}+li.is-active.orbit-slide>(fakeimg)+figcaption.orbit-caption{Space,the final frontier}^li.orbit-slide>(fakeimg)+figcaption.orbit-caption{Lets Rocket!}^li.orbit-slide>(fakeimg)+figcaption.orbit-caption{Encapsulating}^^(orbit-nav)",
 				"search": ".row.small-12.column>.input-group>input.input-group-field[type='text']+.input-group-button>input.button[type='Submit'][value='Search']",
+				"email": ".row.small-12.column>.input-group>input.input-group-field[type='text'][placeholder='example@email.com']+.input-group-button>input.button[type='Submit'][value='Submit']",
 				
 				// Forms & Inputs
 				"so2" : "select>option*2",
@@ -65,11 +80,15 @@
 				// Layout Align
 				"r12r": ".row>.small-12.column.text-right",
 				"r12c": ".row>.small-12.column.text-center",
+				"r12": ".row>.small-12.column",
 				"r11c": ".row>.small-11.column.small-centered",
 				"r10c": ".row>.small-10.column.small-centered",
 				"r9c": ".row>.small-9.column.small-centered",
 				"r8c": ".row>.small-8.column.small-centered",
-
+				"r7c": ".row>.small-7.column.small-centered",
+				"r6c": ".row>.small-6.column.small-centered",
+				"r5c": ".row>.small-5.column.small-centered",
+				"r4c": ".row>.small-4.column.small-centered",
 
 				// Row Layout
 				"r111": ".row>.small-11.columns+.small-1.columns",
